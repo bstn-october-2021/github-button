@@ -73,7 +73,7 @@ class GithubButton extends LitElement {
     super();
     this.newWindow = false
   }
-  #handleClick (event) {
+  handleClick (event) {
     const githubBaseURL = 'https://github.com'
     const githubURL = new URL(this.link, githubBaseURL)
     
@@ -83,7 +83,7 @@ class GithubButton extends LitElement {
 
     
   }
-#onChange = (event) => {
+onChange = (event) => {
   console.log(event.targetvalue)
 }
   render () {
